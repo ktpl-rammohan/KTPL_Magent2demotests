@@ -1,0 +1,96 @@
+<project name="Style Icon" default="usage" basedir=".">  
+
+<!-- ========== initialize Properties =================================== -->
+    <property environment="env"/>    
+    <property name="workspace.homepage" value="${basedir}"/>
+	<property name="workspace.jarFiles" value="D:\Software\Testing-Tools\Selenium\WebDriver\Selenium 3.0"/>
+    <property name="testcase.destination" value="${workspace.homepage}/build"/>
+    <property name="testcase.source" value="${workspace.homepage}/src"/>
+	<property name="testcase.reportDirectory" value="test-output"/>
+    
+	  <!-- cleaning the directory -->
+	    <target name="cleaning">
+	        <delete dir="${testcase.destination}"/>
+	    </target>
+
+	<!-- For compiling code -->
+		    <target name="compiling" depends="initialization, cleaning" > 
+				<delete includeemptydirs="true" quiet="true">
+		            <fileset dir="${testcase.destination}" includes="**/*"/>
+				</delete>
+		        <echo message="making directory..."/>
+				<mkdir dir="${testcase.destination}"/>
+		        <echo message="classpath------: ${test.classpath}"/>
+		        <echo message="compiling..."/>
+		        <javac 
+		            debug="true" 
+		            destdir="${testcase.destination}" 
+		            srcdir="${testcase.source}" 
+		            target="1.5" 
+		            classpath="${test.classpath}"
+		        >
+		        </javac>
+		      </target>
+	      
+
+	
+	<!-- For executing the scenario, use execution target -->
+	    <target name="execute" depends="compiling">
+	        <testng classpath="${test.classpath}:${testcase.destination}" suitename="Test Suite Execution">	
+	            <xmlfileset dir="${workspace.homepage}" includes="Release23122016.xml"/>
+	        </testng>
+	        <!--
+	        <testng classpath="${test.classpath}:${testcase.destination}" groups="fast">
+	            <classfileset dir="${testcase.destination}" includes="example1/*.class"/>
+	        </testng>
+	        -->
+	    </target>
+	 <target name="classPathSetting" unless="test.classpath">
+        <path id="classpath_jars">
+            <fileset dir="${workspace.jarFiles}" includes="*.jar"/>
+        </path>
+        <pathconvert pathsep=":" 
+            property="test.classpath" 
+            refid="classpath_jars"/>
+    </target>
+
+    <target name="initialization" depends="classPathSetting">
+        <tstamp>
+            <format property="start.time" pattern="MM/dd/yyyy hh:mm aa" />
+        </tstamp>
+        <condition property="ANT" 
+            value="${env.ANT_HOME}/bin/ant.bat" 
+            else="${env.ANT_HOME}/bin/ant">
+                    <os family="windows" />
+        </condition>
+        <taskdef name="testng" classpath="${test.classpath}"
+               classname="org.testng.TestNGAntTask" />
+    
+    </target>
+  
+    <!-- all -->
+    <target name="all">
+    </target>
+
+  
+    <!-- build -->
+    <target name="build" depends="initialization">
+    </target>
+
+    <target name="usage">
+        <echo>
+            ant execute target will execute all the test cases and test scripts
+        </echo>
+    </target>
+	
+
+	<path id="test.c">
+	        <fileset dir="${workspace.jarFiles}" includes="*.jar"/>
+
+	</path>
+	
+	<target name="email" >
+	       <java classname="com.unicodetechnologies.utility.SendEmail" classpath="${testcase.destination}" classpathref="test.c" />
+    </target>
+	 
+</project>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.ktpl.mainNavigationmenu.Maincategories"/>
+      <class name="com.ktpl.headerSection.Registereduser_Accountpanel"/>
+      <class name="com.ktpl.productlistingpage.Product_Listing"/>
+      <class name="com.ktpl.end_to_end_Scenario.Guestuser_End_to_End_Scenario"/>
+      <class name="com.ktpl.checkoutSection.NewTest"/>
+      <class name="com.ktpl.productTest.Brokenlinkchecker"/>
+      <class name="com.ktpl.shoppingcart.Promocode"/>
+      <class name="com.ktpl.shoppingcart.ProductsList"/>
+      <class name="com.ktpl.myAccount.Accountdashboard"/>
+      <class name="com.ktpl.footerSection.CMSlinks"/>
+      <class name="com.ktpl.productlistingpage.Products_Sorting"/>
+      <class name="com.ktpl.headerSection.Guestuser_Accountpanel"/>
+      <class name="com.ktpl.mainNavigationmenu.Admincmspages"/>
+      <class name="com.ktpl.footerSection.Practice_CAlogin"/>
+      <class name="com.ktpl.mainNavigationmenu.CSV_productAttribute_Import"/>
+      <class name="com.ktpl.productTest.ConfigurableProduct"/>
+      <class name="com.ktpl.productTest.SimpleProduct"/>
+      <class name="com.ktpl.end_to_end_Scenario.Registereduser_End_to_End_Scenario"/>
+      <class name="com.ktpl.myAccount.Login_functionality"/>
+      <class name="com.ktpl.headerSection.Floatingcart_panel"/>
+      <class name="com.ktpl.mainNavigationmenu.Subcategories"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Magento2Demo">
+              <span class="suite-name border-failed">Magento2Demo</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Magento2Demo">
+                    <span>E:\Projects\LaFamilia\KTPL_Magento2demotests\KTPL_Magento2demotests\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Magento2Demo">
+                    <span class="test-stats">7 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Magento2Demo">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Magento2Demo">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Magento2Demo">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Magento2Demo">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Magento2Demo">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 3 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Magento2Demo" class="hide-methods failed suite-Magento2Demo"> (hide)</a> <!-- hide-methods failed suite-Magento2Demo -->
+                      <a href="#" panel-name="suite-Magento2Demo" class="show-methods failed suite-Magento2Demo"> (show)</a> <!-- show-methods failed suite-Magento2Demo -->
+                    </span>
+                    <div class="method-list-content failed suite-Magento2Demo">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Magento2Demo" title="com.ktpl.checkoutSection.Guestorder" hash-for-method="GuestEndtoEndScenario">GuestEndtoEndScenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Magento2Demo" title="com.ktpl.checkoutSection.LoggedinCustomerorder" hash-for-method="GuestEndtoEndScenario">GuestEndtoEndScenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Magento2Demo" title="com.ktpl.headerSection.Floatingcart_panel" hash-for-method="floatingcart">floatingcart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Magento2Demo -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Magento2Demo" class="hide-methods passed suite-Magento2Demo"> (hide)</a> <!-- hide-methods passed suite-Magento2Demo -->
+                      <a href="#" panel-name="suite-Magento2Demo" class="show-methods passed suite-Magento2Demo"> (show)</a> <!-- show-methods passed suite-Magento2Demo -->
+                    </span>
+                    <div class="method-list-content passed suite-Magento2Demo">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Magento2Demo" title="com.ktpl.footerSection.CMSlinks" hash-for-method="CMS">CMS</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Magento2Demo" title="com.ktpl.mainNavigationmenu.Maincategories" hash-for-method="Categories">Categories</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Magento2Demo" title="com.ktpl.myAccount.Loginlogoutverification" hash-for-method="logintest">logintest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Magento2Demo" title="com.ktpl.productlistingpage.ProductspriceSortingverification" hash-for-method="lowToHigh">lowToHigh</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Magento2Demo" title="com.ktpl.myAccount.Accountdashboard" hash-for-method="myaccount">myaccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Magento2Demo" title="com.ktpl.productlistingpage.Productlisitngcountverification" hash-for-method="productcount">productcount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Magento2Demo" title="com.ktpl.mainNavigationmenu.Subcategories" hash-for-method="subcategories">subcategories</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Magento2Demo -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Magento2Demo" class="panel Magento2Demo">
+          <div class="suite-Magento2Demo-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ktpl.checkoutSection.LoggedinCustomerorder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GuestEndtoEndScenario">
+                  </a> <!-- GuestEndtoEndScenario -->
+                  <span class="method-name">GuestEndtoEndScenario</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+Build info: version: &apos;unknown&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:43:45 -0700&apos;
+System info: host: &apos;RamMohan-PC&apos;, ip: &apos;10.16.16.203&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\Rohan\AppData\Local\Temp\scoped_dir9044_23378}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=72.0.3626.119, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 114217879fa51fcc6b409fdcdf5e3fa7
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:322)
+	at com.ktpl.checkoutSection.LoggedinCustomerorder.GuestEndtoEndScenario(LoggedinCustomerorder.java:35)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Magento2Demo-class-failed -->
+          <div class="suite-Magento2Demo-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ktpl.checkoutSection.Guestorder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GuestEndtoEndScenario">
+                  </a> <!-- GuestEndtoEndScenario -->
+                  <span class="method-name">GuestEndtoEndScenario</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 370 milliseconds
+Build info: version: &apos;unknown&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:43:45 -0700&apos;
+System info: host: &apos;RamMohan-PC&apos;, ip: &apos;10.16.16.203&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\Rohan\AppData\Local\Temp\scoped_dir9044_23378}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=72.0.3626.119, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 114217879fa51fcc6b409fdcdf5e3fa7
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:322)
+	at com.ktpl.checkoutSection.Guestorder.GuestEndtoEndScenario(Guestorder.java:34)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Magento2Demo-class-failed -->
+          <div class="suite-Magento2Demo-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ktpl.headerSection.Floatingcart_panel</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="floatingcart">
+                  </a> <!-- floatingcart -->
+                  <span class="method-name">floatingcart</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=72.0.3626.119)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 219 milliseconds
+Build info: version: &apos;unknown&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:43:45 -0700&apos;
+System info: host: &apos;RamMohan-PC&apos;, ip: &apos;10.16.16.203&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\Rohan\AppData\Local\Temp\scoped_dir9044_23378}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=72.0.3626.119, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 114217879fa51fcc6b409fdcdf5e3fa7
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.ktpl.headerSection.Floatingcart_panel.floatingcart(Floatingcart_panel.java:111)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Magento2Demo-class-failed -->
+          <div class="suite-Magento2Demo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ktpl.mainNavigationmenu.Maincategories</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Categories">
+                  </a> <!-- Categories -->
+                  <span class="method-name">Categories</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Magento2Demo-class-passed -->
+          <div class="suite-Magento2Demo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ktpl.myAccount.Accountdashboard</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="myaccount">
+                  </a> <!-- myaccount -->
+                  <span class="method-name">myaccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Magento2Demo-class-passed -->
+          <div class="suite-Magento2Demo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ktpl.mainNavigationmenu.Subcategories</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="subcategories">
+                  </a> <!-- subcategories -->
+                  <span class="method-name">subcategories</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Magento2Demo-class-passed -->
+          <div class="suite-Magento2Demo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ktpl.productlistingpage.ProductspriceSortingverification</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="lowToHigh">
+                  </a> <!-- lowToHigh -->
+                  <span class="method-name">lowToHigh</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Magento2Demo-class-passed -->
+          <div class="suite-Magento2Demo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ktpl.myAccount.Loginlogoutverification</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logintest">
+                  </a> <!-- logintest -->
+                  <span class="method-name">logintest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Magento2Demo-class-passed -->
+          <div class="suite-Magento2Demo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ktpl.productlistingpage.Productlisitngcountverification</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="productcount">
+                  </a> <!-- productcount -->
+                  <span class="method-name">productcount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Magento2Demo-class-passed -->
+          <div class="suite-Magento2Demo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ktpl.footerSection.CMSlinks</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CMS">
+                  </a> <!-- CMS -->
+                  <span class="method-name">CMS</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Magento2Demo-class-passed -->
+        </div> <!-- panel Magento2Demo -->
+        <div panel-name="test-xml-Magento2Demo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\Projects\LaFamilia\KTPL_Magento2demotests\KTPL_Magento2demotests\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Magento2Demo&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;customer Account&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ktpl.myAccount.Loginlogoutverification&quot;/&gt;
+      &lt;class name=&quot;com.ktpl.myAccount.Accountdashboard&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- customer Account --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Main categories&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ktpl.mainNavigationmenu.Maincategories&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Main categories --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Sub categories&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ktpl.mainNavigationmenu.Subcategories&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Sub categories --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Cms links&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ktpl.footerSection.CMSlinks&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Cms links --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Header section&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ktpl.headerSection.Floatingcart_panel&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Header section --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Productlsiting&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ktpl.productlistingpage.ProductspriceSortingverification&quot;/&gt;
+      &lt;class name=&quot;com.ktpl.productlistingpage.Productlisitngcountverification&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Productlsiting --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;checkoutsection&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ktpl.checkoutSection.Guestorder&quot;/&gt;
+      &lt;class name=&quot;com.ktpl.checkoutSection.LoggedinCustomerorder&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- checkoutsection --&gt;
+&lt;/suite&gt; &lt;!-- Magento2Demo --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Magento2Demo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Magento2Demo</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">customer Account (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Main categories (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Sub categories (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Cms links (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Header section (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Productlsiting (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">checkoutsection (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Magento2Demo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Magento2Demo</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Magento2Demo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Magento2Demo</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Magento2Demo');
+function tableData_Magento2Demo() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'myaccount')
+data.setCell(0, 2, 'com.ktpl.myAccount.Accountdashboard')
+data.setCell(0, 3, 45411);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'CMS')
+data.setCell(1, 2, 'com.ktpl.footerSection.CMSlinks')
+data.setCell(1, 3, 43321);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'subcategories')
+data.setCell(2, 2, 'com.ktpl.mainNavigationmenu.Subcategories')
+data.setCell(2, 3, 42229);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'floatingcart')
+data.setCell(3, 2, 'com.ktpl.headerSection.Floatingcart_panel')
+data.setCell(3, 3, 37189);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'productcount')
+data.setCell(4, 2, 'com.ktpl.productlistingpage.Productlisitngcountverification')
+data.setCell(4, 3, 24493);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'logintest')
+data.setCell(5, 2, 'com.ktpl.myAccount.Loginlogoutverification')
+data.setCell(5, 3, 22297);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Categories')
+data.setCell(6, 2, 'com.ktpl.mainNavigationmenu.Maincategories')
+data.setCell(6, 3, 15040);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'lowToHigh')
+data.setCell(7, 2, 'com.ktpl.productlistingpage.ProductspriceSortingverification')
+data.setCell(7, 3, 7892);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'GuestEndtoEndScenario')
+data.setCell(8, 2, 'com.ktpl.checkoutSection.Guestorder')
+data.setCell(8, 3, 370);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'GuestEndtoEndScenario')
+data.setCell(9, 2, 'com.ktpl.checkoutSection.LoggedinCustomerorder')
+data.setCell(9, 3, 31);
+window.suiteTableData['Magento2Demo']= { tableData: data, tableDiv: 'times-div-Magento2Demo'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Magento2Demo">
+              </div> <!-- times-div-Magento2Demo -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Magento2Demo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Magento2Demo</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Magento2Demo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">3 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.ktpl.myAccount.Accountdashboard</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">MAcheckTestSuiteExecution</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.ktpl.checkoutSection.LoggedinCustomerorder</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">checkTestSuiteExecution</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.ktpl.productlistingpage.Productlisitngcountverification</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">checkTestSuiteExecution</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Magento2Demo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ktpl.myAccount.Loginlogoutverification</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">MAcheckTestSuiteExecution</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ktpl.mainNavigationmenu.Subcategories</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">checkTestSuiteExecution</span>
+                <span class="method-start">7300 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ktpl.footerSection.CMSlinks</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">checkTestSuiteExecution</span>
+                <span class="method-start">7300 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ktpl.headerSection.Floatingcart_panel</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">checkTestSuiteExecution</span>
+                <span class="method-start">7315 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ktpl.productlistingpage.ProductspriceSortingverification</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">checkTestSuiteExecution</span>
+                <span class="method-start">7315 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ktpl.checkoutSection.Guestorder</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">checkTestSuiteExecution</span>
+                <span class="method-start">7315 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ktpl.myAccount.Accountdashboard</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">CMScheckTestCaseExecution</span>
+                <span class="method-start">7315 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ktpl.myAccount.Loginlogoutverification</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">LFcheckTestCaseExecution</span>
+                <span class="method-start">7331 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">logintest</span>
+                <span class="method-start">7347 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ktpl.myAccount.Accountdashboard</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">myaccount</span>
+                <span class="method-start">29650 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ktpl.mainNavigationmenu.Maincategories</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">MCcheckTestCaseExecution</span>
+                <span class="method-start">75111 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">Categories</span>
+                <span class="method-start">75114 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ktpl.mainNavigationmenu.Subcategories</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">SCcheckTestCaseExecution</span>
+                <span class="method-start">90174 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">subcategories</span>
+                <span class="method-start">90175 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ktpl.footerSection.CMSlinks</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">CMScheckTestCaseExecution</span>
+                <span class="method-start">132427 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">CMS</span>
+                <span class="method-start">132431 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ktpl.headerSection.Floatingcart_panel</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">FCcheckTestCaseExecution</span>
+                <span class="method-start">175769 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">floatingcart</span>
+                <span class="method-start">175769 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ktpl.productlistingpage.ProductspriceSortingverification</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">lowToHigh</span>
+                <span class="method-start">213002 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ktpl.productlistingpage.Productlisitngcountverification</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">productcount</span>
+                <span class="method-start">220894 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ktpl.checkoutSection.Guestorder</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">checkTestCaseExecution</span>
+                <span class="method-start">245418 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ktpl.checkoutSection.LoggedinCustomerorder</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">checkTestCaseExecution</span>
+                <span class="method-start">245418 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ktpl.checkoutSection.Guestorder</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">GuestEndtoEndScenario</span>
+                <span class="method-start">245418 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ktpl.checkoutSection.LoggedinCustomerorder</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">GuestEndtoEndScenario</span>
+                <span class="method-start">245788 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

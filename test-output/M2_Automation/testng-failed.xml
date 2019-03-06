@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [M2_Automation]" parallel="tests">
+  <test thread-count="1" name="Main categories(failed)" parallel="tests">
+    <classes>
+      <class name="com.ktpl.mainNavigationmenu.Maincategories">
+        <methods>
+          <include name="MCcheckTestCaseExecution"/>
+          <include name="checkTestSuiteExecution"/>
+          <include name="Categories"/>
+        </methods>
+      </class> <!-- com.ktpl.mainNavigationmenu.Maincategories -->
+    </classes>
+  </test> <!-- Main categories(failed) -->
+  <test thread-count="1" name="Sub categories(failed)" parallel="tests">
+    <classes>
+      <class name="com.ktpl.mainNavigationmenu.Subcategories">
+        <methods>
+          <include name="subcategories"/>
+          <include name="checkTestSuiteExecution"/>
+          <include name="SCcheckTestCaseExecution"/>
+        </methods>
+      </class> <!-- com.ktpl.mainNavigationmenu.Subcategories -->
+    </classes>
+  </test> <!-- Sub categories(failed) -->
+  <test thread-count="1" name="Cms links(failed)" parallel="tests">
+    <classes>
+      <class name="com.ktpl.footerSection.CMSlinks">
+        <methods>
+          <include name="CMS"/>
+          <include name="CMScheckTestCaseExecution"/>
+          <include name="checkTestSuiteExecution"/>
+        </methods>
+      </class> <!-- com.ktpl.footerSection.CMSlinks -->
+    </classes>
+  </test> <!-- Cms links(failed) -->
+  <test thread-count="1" name="Header section(failed)" parallel="tests">
+    <classes>
+      <class name="com.ktpl.headerSection.Floatingcart_panel">
+        <methods>
+          <include name="checkTestSuiteExecution"/>
+          <include name="FCcheckTestCaseExecution"/>
+          <include name="floatingcart"/>
+        </methods>
+      </class> <!-- com.ktpl.headerSection.Floatingcart_panel -->
+    </classes>
+  </test> <!-- Header section(failed) -->
+  <test thread-count="1" name="MyAccount section(failed)" parallel="tests">
+    <classes>
+      <class name="com.ktpl.myAccount.Accountdashboard">
+        <methods>
+          <include name="MAcheckTestSuiteExecution"/>
+          <include name="myaccount"/>
+          <include name="CMScheckTestCaseExecution"/>
+        </methods>
+      </class> <!-- com.ktpl.myAccount.Accountdashboard -->
+      <class name="com.ktpl.myAccount.Login_functionality">
+        <methods>
+          <include name="logintest"/>
+          <include name="MAcheckTestSuiteExecution"/>
+          <include name="LFcheckTestCaseExecution"/>
+        </methods>
+      </class> <!-- com.ktpl.myAccount.Login_functionality -->
+    </classes>
+  </test> <!-- MyAccount section(failed) -->
+</suite> <!-- Failed suite [M2_Automation] -->

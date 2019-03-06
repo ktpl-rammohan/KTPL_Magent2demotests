@@ -1,0 +1,51 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Magento2Demo" parallel = 'tests' thread-count="1" data-provider-thread-count="10" preserve-order = "true">
+
+<test name="customer Account">
+<classes>
+<class name="com.ktpl.myAccount.Loginlogoutverification"></class>
+<class name="com.ktpl.myAccount.Accountdashboard"></class>
+</classes>
+</test>
+
+
+<test name="Main categories">
+<classes>
+<class name="com.ktpl.mainNavigationmenu.Maincategories"></class>
+</classes>
+</test>
+
+<test name="Sub categories">
+<classes>
+<class name="com.ktpl.mainNavigationmenu.Subcategories"></class>
+</classes>
+</test>
+
+<test name = "Cms links">
+<classes>
+<class name = "com.ktpl.footerSection.CMSlinks"></class>
+</classes>
+</test>
+
+<test name = "Header section">
+<classes>
+<class name = "com.ktpl.headerSection.Floatingcart_panel"></class>
+</classes>
+
+</test>
+<test name = "Productlsiting">
+<classes>
+<class name = "com.ktpl.productlistingpage.ProductspriceSortingverification"></class>
+<class name = "com.ktpl.productlistingpage.Productlisitngcountverification"></class>
+</classes>
+</test>
+
+
+<test name = "checkoutsection">
+<classes>
+<class name = "com.ktpl.checkoutSection.Guestorder"></class>
+<class name = "com.ktpl.checkoutSection.LoggedinCustomerorder"></class>
+</classes>
+</test>
+
+</suite>

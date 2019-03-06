@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Magento2Demo]" parallel="tests">
+  <test thread-count="1" name="Header section(failed)" parallel="tests">
+    <classes>
+      <class name="com.ktpl.headerSection.Floatingcart_panel">
+        <methods>
+          <include name="checkTestSuiteExecution"/>
+          <include name="FCcheckTestCaseExecution"/>
+          <include name="floatingcart"/>
+        </methods>
+      </class> <!-- com.ktpl.headerSection.Floatingcart_panel -->
+    </classes>
+  </test> <!-- Header section(failed) -->
+  <test thread-count="1" name="checkoutsection(failed)" parallel="tests">
+    <classes>
+      <class name="com.ktpl.checkoutSection.LoggedinCustomerorder">
+        <methods>
+          <include name="GuestEndtoEndScenario"/>
+          <include name="checkTestCaseExecution"/>
+          <include name="checkTestSuiteExecution"/>
+        </methods>
+      </class> <!-- com.ktpl.checkoutSection.LoggedinCustomerorder -->
+      <class name="com.ktpl.checkoutSection.Guestorder">
+        <methods>
+          <include name="GuestEndtoEndScenario"/>
+          <include name="checkTestCaseExecution"/>
+          <include name="checkTestSuiteExecution"/>
+        </methods>
+      </class> <!-- com.ktpl.checkoutSection.Guestorder -->
+    </classes>
+  </test> <!-- checkoutsection(failed) -->
+</suite> <!-- Failed suite [Magento2Demo] -->
